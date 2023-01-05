@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_fauna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fauna_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/fauna_population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#714407"
+                android:fontFamily="@font/autour_one"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="TextView"
+                android:textColor="#EEE9A1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/fauna_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fauna_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#714407"
+                android:fontFamily="@font/autour_one"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#EEE9A1"
+                app:layout_constraintBottom_toBottomOf="@+id/fauna_image"
+                app:layout_constraintEnd_toEndOf="@+id/fauna_image"
+                app:layout_constraintStart_toStartOf="@+id/fauna_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
